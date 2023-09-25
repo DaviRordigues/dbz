@@ -2,7 +2,7 @@ package dbz.main;
 
 import java.util.Scanner;
 
-public class DBZGame {
+public class dbzmain {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Bem-vindo ao mundo de Dragon Ball!");
