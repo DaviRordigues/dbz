@@ -1,6 +1,6 @@
 package dbz.main;
 
-import java.util.Scanner;
+import dbz.main.entities.*;
 
 import java.util.Scanner;
 

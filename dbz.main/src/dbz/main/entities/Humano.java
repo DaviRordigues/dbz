@@ -1,4 +1,4 @@
-package dbz.main;
+package dbz.main.entities;
 
 public class Humano extends Raca {
 
