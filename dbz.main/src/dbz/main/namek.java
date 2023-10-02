@@ -1,33 +1,26 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package dbz.main;
 
-/**
- *
- * @author dbezerra
- */
- class namek extends raca {
-    private String maxregen;//  se regenera caso perca uma batalha e receber stts apos a batalha//
-    public namek(int vida, int ki, String tecnica,String maxregen) {
+public class Namek extends Raca {
+
+    private String maxregen; // se regenera caso perca uma batalha e recebe stats adicionais após a batalha
+
+    public Namek(int vida, int ki, String tecnica, String maxregen) {
         super(vida, ki, tecnica);
         this.maxregen = maxregen;
     }
 
-    /**
-     * @return the maxregen
-     */
     public String getMaxregen() {
         return maxregen;
     }
 
-    /**
-     * @param maxregen the maxregen to set
-     */
     public void setMaxregen(String maxregen) {
         this.maxregen = maxregen;
     }
-    
+
+    // Método específico para regeneração de Namek
+    public void regenerar() {
+        System.out.println("Você se regenerou após a batalha!");
+        setVida(getVida() + 200);
+        setKi(getKi() + 100);
+    }
 }

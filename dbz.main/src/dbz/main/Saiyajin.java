@@ -1,31 +1,26 @@
+package dbz.main;
 
-    package dbz.main;
-    class Saiyajin extends raca {
-        private  int despertar;// em 100% dobra seus stts//
-        public Saiyajin(int vida, int ki, String tecnica, int despertar) {
-            super(vida, ki, tecnica);
-            this.despertar = despertar;
-        } 
-        public int getDespertar() {
-            return despertar;
-        }
-        public void setDespertar(int despertar) {
-            this.despertar = despertar;
-        }
+public class Saiyajin extends Raca {
 
-    int getVida() {
-            return 0;
+    private int despertar; // em 100% dobra seus stats
+
+    public Saiyajin(int vida, int ki, String tecnica, int despertar) {
+        super(vida, ki, tecnica);
+        this.despertar = despertar;
     }
 
-    int atacar() {
-            return 0;
+    public int getDespertar() {
+        return despertar;
     }
 
-    int usarTecnicaEspecial() {
-            return 0;
+    public void setDespertar(int despertar) {
+        this.despertar = despertar;
     }
 
-    void recuperarVida(int i) {
+    // Método específico para transformação de Saiyajin
+    public void transformar() {
+        System.out.println("Você se transformou em Super Saiyajin! Seus poderes aumentaram!");
+        setVida(getVida() * 2);
+        setKi(getKi() * 2);
     }
-
-    }
+}

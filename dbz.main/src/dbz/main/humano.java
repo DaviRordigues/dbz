@@ -1,11 +1,10 @@
-
 package dbz.main;
 
- class humano extends raca {
-    
-  private String agilidade; //termina o treinamento em 4 missoes//
+public class Humano extends Raca {
 
-    public humano(int vida, int ki, String tecnica,String agilidade) {
+    private String agilidade; // termina o treinamento em 4 missões
+
+    public Humano(int vida, int ki, String tecnica, String agilidade) {
         super(vida, ki, tecnica);
         this.agilidade = agilidade;
     }
@@ -17,6 +16,10 @@ package dbz.main;
     public void setAgilidade(String agilidade) {
         this.agilidade = agilidade;
     }
-     
-   
+
+    // Método específico para treinamento rápido de Humano
+    public void treinamentoRapido() {
+        System.out.println("Seu treinamento foi concluído em 4 missões! Você ganhou agilidade!");
+        setAgilidade("Treinamento concluído");
+    }
 }

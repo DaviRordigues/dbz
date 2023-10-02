@@ -1,15 +1,17 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package dbz.main;
 
-/**
- *
- * @author dbezerra
- */
-public class sementedosdeuses {
-    private String curar;// vai encher toda vida//
-    
+public class SementeDosDeuses {
+
+    private String nome;
+
+    public SementeDosDeuses(String nome) {
+        this.nome = nome;
+    }
+
+    public void usar(Raca jogador) {
+        // Recupera toda a vida do jogador.
+        jogador.setVida(jogador.getVida());
+
+        System.out.println(jogador.getClass().getSimpleName() + " usou a " + nome + " e recuperou toda a vida!");
+    }
 }
